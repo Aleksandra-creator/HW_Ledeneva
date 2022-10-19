@@ -1,19 +1,28 @@
-﻿// Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+﻿// Напишите программу, которая принимает на вход три числа и 
+// выдаёт максимальное из этих чисел.
 // 2, 3, 7 -> 7
 
-int[] num = {2, 3, 7};
-int max = num[0];
-
-for (int i = 0; i < num.Length; i++)
+int Prompt(string message)
 {
-    if(max < num[i++])
-    {
-        Console.WriteLine($"Число {num[i++]} максимальное");
-        i = i++;
-    }
-    else
-    {
-        Console.WriteLine($"Число {max} максимальное");
-    }
-
+    System.Console.Write(message);
+    int number = Convert.ToInt32(Console.ReadLine());
+    return number;
 }
+int a = Prompt($"Введите первое число: ");
+int b = Prompt($"Введите второе число: ");
+int c = Prompt($"Введите третье число: ");
+
+int max = a;
+if(max < b) 
+{
+    max = b;
+}
+if (max < c) 
+{
+    max = c;
+}
+else
+{
+    max = a;
+}
+Console.WriteLine($"Максимальное число равно {max}");
