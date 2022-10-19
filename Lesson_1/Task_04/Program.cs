@@ -11,7 +11,7 @@ int Prompt(string message)
 int value = Prompt("Введите натуральное число: ");
 int number = 2;
 
-if(value <= 1 && value % 2 != 0)
+if(value <= 1)
 {
     value = Prompt("Введите натуральное число: ");
 }
