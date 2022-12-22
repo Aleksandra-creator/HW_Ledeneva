@@ -22,19 +22,19 @@ void Result ()
 }
 Result();
 
-// string GetEven(int m, int n) // возвращает строку с четными числами через запятую
+// string EvenNumbers(int m, int n) 
 // {
-//     if (m % 2 != 0 && m < n) m += 1; // приводим к четности
-//     if (m < 0) m = 2; // натуральные числа будут начинаться с 2 
-//     if (m > n) return ""; // условие выхода из рекурсии
-//     else return ($"{m}, " + GetEven(m + 2, n)).TrimEnd(' ', ','); 
+//     if (m % 2 != 0 && m < n) m += 1;
+//     if (m < 0) m = 2; 
+//     if (m > n) return "";
+//     else return ($"{m}, " + EvenNumbers(m + 2, n)).TrimEnd(' ', ','); 
 // }
 
-// void Main() // тело программы
+// void Result() 
 // {
-//     int m = -100;
-//     int n = 30;
-//     System.Console.WriteLine(GetEven(m, n));
+//     int m = 1;
+//     int n = 8;
+//     Console.WriteLine(EvenNumbers(m, n));
 // }
 
-// Main();
+// Result();
